@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Képek beillesztése és formázása</title>
+
+    <style>
+        body{
+            border-left: 4px solid black;
+        }
+    </style>
 </head>
 <body>
-    <h1>Képek beillesztése és formázása</h1>
+    
+    <div style="width: 380px; margin: 10px;" >
 
-    <img src="url" alt="Gyümölcs">
+        <h1 style="font-size: 25px;">Képek beillesztése és formázása</h1>
 
-    <p>Ez egy szöveg, amit arra használunk, hogy a kép körül jelenjen majd meg. Ha sikerül, akkor a kép körül lesz folytatva a szöveggel (leglábbis a kép két oldala). Így már sokkal szebben betudunk ílleszteni képeket a weboldalunkra!</p>
+        <img src="/kepek/gyümölcs.jpg" alt="Gyümölcs" style="border: 4px solid red; float: left; width: 130px;">
 
-    <img src="scc.jpg" alt="scc">
+        <p style="text-align: justify;">Ez egy szöveg, amit arra használunk, hogy a kép körül jelenjen majd meg. Ha sikerül, akkor a kép körül lesz folytatva a szöveggel (leglábbis a kép két oldala). Így már sokkal szebben betudunk ílleszteni képeket a weboldalunkra!</p>
+
+        <img src="/kepek/scc.jpg" alt="scc" style="width: 450px; margin-top: 50px;">
+
+    </div>
+    
 </body>
 </html>
