@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display block</title>
+
+    <style>
+        body{
+            background-color: #ffff00;
+        }
+        p{color: rgb(132, 0, 255);}
+
+        p.kcs1{display: none;}
+        p.kcs2{display: inline; font-size: 150%;}
+        p.kcs3{display: block; font-size: 150%;}
+        p.kcs4{display: inline-block; font-size: 150%;}
+
+    </style>
+</head>
+<body>
+
+    <h1>A megjelenítés tulajdonságai</h1>
+
+    <h2>display: none</h2>
+    <div>
+        Az adat a számítógép által tárolt és feldolgozható jelsorozat... <p class="kcs1">ADAT - INFORMÁCIÓ!</p> Az információ latin eredetű szó: felvilágosítás, tájékoztatás, hírközlés, tudósítás ect.
+    </div>
+
+    <h2>display: inline</h2>
+    <div>
+        Az adat a számítógép által tárolt és feldolgozható jelsorozat... <p class="kcs2">ADAT - INFORMÁCIÓ!</p> Az információ latin eredetű szó: felvilágosítás, tájékoztatás, hírközlés, tudósítás ect.
+    </div>
+
+    <h2>display: block</h2>
+    <div>
+        Az adat a számítógép által tárolt és feldolgozható jelsorozat... <p class="kcs2">ADAT - INFORMÁCIÓ!</p> Az információ latin eredetű szó: felvilágosítás, tájékoztatás, hírközlés, tudósítás ect.
+    </div>
+
+    <h2>display: inline-block</h2>
+    <div>
+        Az adat a számítógép által tárolt és feldolgozható jelsorozat... <p class="kcs3">ADAT - INFORMÁCIÓ!</p> Az információ latin eredetű szó: felvilágosítás, tájékoztatás, hírközlés, tudósítás ect.
+    </div>
+    
+</body>
+</html>
