@@ -1,0 +1,58 @@
+tr,td{
+    border: 1px solid black;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+table{
+    font-weight: bold;
+    text-align: justify;
+    border-collapse: collapse;
+}
+.sor1{
+    background-color: red;
+    height: 130px;
+}
+.sor2{
+    background-color: rgb(245, 245, 150);
+    height: 160px;
+}
+.sor3{
+    background-color: rgb(245, 245, 150);
+    height: 130px;
+}
+.sor1_cella1{
+    width: 130px;
+}
+.sor1_cella2{
+    width: 180px;
+    text-align: right;
+}
+.sor1_cella3{
+    width: 130px;
+    text-align: center;
+    vertical-align: bottom;
+}
+.sor2_cella2{
+    overflow: scroll;
+}
+.sor2_cella3{
+    text-align: center;
+}
+.sor3_cella2{
+    background-color: rgb(241, 55, 241);
+    text-align: center;
+}
+.cella1{
+    width: 130px;
+}
+.cella2{
+    width: 180px;
+}
+.cella3{
+    width: 130px;
+    text-align: center; 
+    vertical-align: bottom;
+}
+.cella2_1{
+    height: 130px;
+}
