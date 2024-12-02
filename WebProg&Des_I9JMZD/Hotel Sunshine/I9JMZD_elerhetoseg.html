@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="I9JMZD_styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Hotel Sunshine - Elérhetőség</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <nav id="menu">
+                <ul>
+                    <li><a href="I9JMZD_fooldal.html" class="menugomb">Főoldal</a></li>
+                    <li><a href="I9JMZD_foglalas.html" class="menugomb">Foglalás</a></li>
+                    <li><a href="I9JMZD_elerhetoseg.html" class="menugomb">Elérhetőség</a></li>
+                    <li><a href="I9JMZD_etlap.html" class="menugomb">Étlap</a></li>
+                    <li><a href="I9JMZD_wellness.html" class="menugomb">Wellness</a></li>
+                </ul>
+            </nav>
+
+        </div> 
+    </header>
+
+    <section>
+        <div class="section">
+            <h2>Elérhetőség</h2>
+            <p><i class="glyphicon glyphicon-map-marker"></i> Cím: 3950 Sárospatak, Sunshine utca 1.</p>
+            <p><i class="glyphicon glyphicon-phone"></i> Telefon: +36 1 234 5678&nbsp;&nbsp;&nbsp;<i class="glyphicon glyphicon-phone-alt"></i> 0647 364 756</p>
+            <p><i class="glyphicon glyphicon-envelope"></i> Email: info@hotelsunshine.hu</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <p>Mai dátum</p>
+            <p id="date"></p>
+        </div>
+    </footer>
+    </div>
+    <script>
+        const date = new Date();
+        let y = date.getFullYear();
+        let m = date.getMonth() + 1;
+        let d = date.getDate();
+        document.getElementById("date").innerHTML =y + ". " + m + ". " + d + ".";
+    </script>
+</body>
+</html>

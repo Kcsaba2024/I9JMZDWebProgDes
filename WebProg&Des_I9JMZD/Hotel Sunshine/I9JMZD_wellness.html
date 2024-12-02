@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="I9JMZD_styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Hotel Sunshine - Wellness</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <nav id="menu">
+                <ul>
+                    <li><a href="I9JMZD_fooldal.html" class="menugomb">Főoldal</a></li>
+                    <li><a href="I9JMZD_foglalas.html" class="menugomb">Foglalás</a></li>
+                    <li><a href="I9JMZD_elerhetoseg.html" class="menugomb">Elérhetőség</a></li>
+                    <li><a href="I9JMZD_etlap.html" class="menugomb">Étlap</a></li>
+                    <li><a href="I9JMZD_wellness.html" class="menugomb">Wellness</a></li>
+                </ul>
+            </nav>
+
+        </div> 
+    </header>
+
+    <section>
+        <div class="section">
+        <h2 class="cim2">Wellness szolgáltatások</h2>
+        
+        <table id="table2">
+            <tr>
+                <th>Solgáltatás</th>
+                <th>Idő</th>
+                <th>Ár</th>
+            </tr>
+            <tr>
+                <td>Talp masszázs</td>
+                <td id="ar">30 perc</td>
+                <td id="ar">6000 Ft</td>
+            </tr>
+            <tr>
+                <td>Sportmasszázs</td>
+                <td id="ar">60 perc</td>
+                <td id="ar">9000 Ft</td>
+            </tr>
+            <tr>
+                <td>Relaxáló fejmasszázs</td>
+                <td id="ar">30 perc</td>
+                <td id="ar">5500 Ft</td>
+            </tr>
+            <tr>
+                <td>Aromaterápiás masszázs</td>
+                <td id="ar">60 perc</td>
+                <td id="ar">9500 Ft</td>
+            </tr>
+            <tr>
+                <td>Thai masszázs</td>
+                <td id="ar">60 perc</td>
+                <td id="ar">11000 Ft</td>
+            </tr>
+            <tr>
+                <td>Bőrradírozás tengeri sóval</td>
+                <td id="ar">20 perc</td>
+                <td id="ar">6500 Ft</td>
+            </tr>
+            <tr>
+                <td>Kollagénes arcpakolás</td>
+                <td id="ar">30 perc</td>
+                <td id="ar">9000 Ft</td>
+            </tr>
+            <tr>
+                <td>Finn szauna</td>
+                <td id="ar">30 perc</td>
+                <td id="ar">2500 Ft</td>
+            </tr>
+            <tr>
+                <td>Gőzkabin</td>
+                <td id="ar">30 perc</td>
+                <td id="ar">3500 Ft</td>
+            </tr>
+            <tr>
+                <td>Sókamra</td>
+                <td id="ar">30 perc</td>
+                <td id="ar">2500 Ft</td>
+            </tr>
+            <tr>
+                <td>Testtekercselés algakivonattal</td>
+                <td id="ar">60 perc</td>
+                <td id="ar">10500 Ft</td>
+            </tr>
+        </table>
+    </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <p>Mai dátum</p>
+            <p id="date"></p>
+        </div>
+    </footer>
+    </div>
+    <script>
+        const date = new Date();
+        let y = date.getFullYear();
+        let m = date.getMonth() + 1;
+        let d = date.getDate();
+        document.getElementById("date").innerHTML =y + ". " + m + ". " + d +".";
+    </script>
+</body>
+</html>

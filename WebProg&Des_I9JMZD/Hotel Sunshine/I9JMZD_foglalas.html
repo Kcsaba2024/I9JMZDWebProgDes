@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="I9JMZD_styles.css">
+    <title>Hotel Sunshine - Foglalás</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+        <nav id="menu">
+            <ul>
+                <li><a href="I9JMZD_fooldal.html" class="menugomb">Főoldal</a></li>
+                <li><a href="I9JMZD_foglalas.html" class="menugomb">Foglalás</a></li>
+                <li><a href="I9JMZD_elerhetoseg.html" class="menugomb">Elérhetőség</a></li>
+                <li><a href="I9JMZD_etlap.html" class="menugomb">Étlap</a></li>
+                <li><a href="I9JMZD_wellness.html" class="menugomb">Wellness</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="section">
+            
+            <h2 class="cim2">Foglalási űrlap</h2>
+
+            <form action="I9JMZD_feldolgozo.php" method="post" name="urlap" id="urlap">
+                <label for="name"><b>Teljes név:</b></label>
+                <input type="text" id="name" name="name" required><br>
+                
+                <label for="email"><b>Email:</b></label>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="arrival"><b>Érkezés dátuma:</b></label>
+                <input type="date" id="arrival" name="arrival" required><br>
+                
+                <label for="nights"><b>Éjszakák száma:</b></label>
+                <input type="number" id="nights" name="nights" min="1" required><br>
+
+                <label for="room"><b>Szoba kategóriája:</b></label>
+                <select name="room" id="room">
+                    <option value="standard">Standard kategória</option>
+                    <option value="medium">Közép kategória</option>
+                    <option value="top">Felső kategória</option>
+                </select><br>
+
+                <label for="favcolor"><b>Kedvenc szín:</b></label>
+                <input type="color" name="favcolor" id="favcolor" value="#FFA500"><br>
+
+                <label for="csomag"><b>Wellnes csomag bérlet igénylése:</b></label>
+                <input type="radio" id="csomag" name="csomag" value="Nem kérek">
+                <label for="csomag" class="urlapszoveg">Nem kérek</label><br>
+                <input type="radio" id="csomag" name="csomag" value="Kérek">
+                <label for="csomag" class="urlapszoveg">Kérek</label><br>
+
+                <label for="opt"><b>Extra szolgáltatások:</b></label>
+                <input type="checkbox" name="opt" id="opt" value="Parkolás">
+                <label for="opt1" class="urlapszoveg">Parkolás</label><br>
+                <input type="checkbox" name="opt" id="opt" value="Rendezvények">
+                <label for="opt2" class="urlapszoveg">Rendezvények</label><br>
+                <input type="checkbox" name="opt" id="opt" value="Céges/Üzleti esenény">
+                <label for="opt3" class="urlapszoveg">Céges/Üzleti esenény</label>
+                
+                <label for="requests"><b>Különleges kérések:</b></label>
+                <textarea id="requests" name="requests"></textarea><br>
+                
+                <button type="submit" class="gomb">Foglalás</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <p>Mai dátum</p>
+            <p id="date"></p>
+        </div>
+    </footer>
+    </div>
+    <script>
+        const date = new Date();
+        let y = date.getFullYear();
+        let m = date.getMonth() + 1;
+        let d = date.getDate();
+        document.getElementById("date").innerHTML =y + ". " + m + ". " + d +".";
+    </script>
+</body>
+</html>

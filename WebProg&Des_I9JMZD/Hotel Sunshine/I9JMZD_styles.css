@@ -1,0 +1,125 @@
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-image:url("kepek/background.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+#menu{
+    list-style-type: none;
+}
+
+#menu li{
+    display: inline-block;
+    margin-left: 2%;
+}
+
+.header{
+    background-color: bisque;
+    text-align: center;
+    vertical-align: top;
+    padding: 1%;
+}
+
+.header li a{
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+}
+
+.section{
+    width: 80%;
+    height: 80%;
+    background-color: rgb(228, 222, 213);
+    margin: auto;
+    padding: 2%;
+    border-radius: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.menugomb:hover{
+    background-color: rgb(190, 190, 190);
+}
+
+.footer{
+    background-color: bisque;
+    padding: 1%;
+    vertical-align: bottom;
+}
+
+#table1{
+    margin: auto;
+}
+
+#table2{
+    margin: auto;
+}
+
+#table1 td{
+    padding: 1.5%;
+}
+#table2 td{
+    padding: 0.6rem;
+}
+
+#ar{
+    vertical-align: middle;
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+#bekezd{
+    margin-left: 1%;
+}
+.cim2{
+    text-align: center;
+}
+
+#urlap{
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin: 0.8%;
+    gap: 1%;
+}
+
+.gomb{
+    margin-top: 1.5%;
+    padding: 1%;
+}
+
+.link{
+    color:rgb(81, 168, 30);
+    text-decoration-line: none;
+}
+
+.link:hover{
+    color: rgb(129, 22, 22);
+    text-decoration-line: none;
+}
+
+#video{
+    margin: auto;
+}
+
+.grid{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+button{
+box-shadow:2px 2px 4px;
+}
